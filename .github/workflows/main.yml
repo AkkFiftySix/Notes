@@ -9,6 +9,8 @@ jobs:
     runs-on:
       - self-hosted
     steps:
+      - name: checkout repos
+        uses: actions/checkout@v3
       - name: stop and remove containers
         run: |
            ls -la
@@ -16,8 +18,6 @@ jobs:
       - name: remove images
         run: |
           docker image rm $(docker images) || true
-      - name: checkout repos
-        uses: actions/checkout@v3
       - name: set up environment variables
         run: |
           echo "POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}" >> $GITHUB_ENV
