@@ -1,0 +1,59 @@
+html,
+body {
+  height: 100%;
+}
+
+.form-signin {
+  max-width: 330px; 
+  padding: 1rem;
+}
+
+.form-floating:focus-within {
+  z-index: 2;
+}
+
+input[name="first"]{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+input[name="middle"]{
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+input[name="last"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.note:hover {
+  outline: 1px solid rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.spanchik {
+  display: none;
+  @media (min-width: 550px) {
+    display: inline;
+  }
+}
+
+.infoDesktop {
+  display: none;
+  @media (min-width: 550px) {
+    display: inline;
+  }
+}
+
+.infoMobile {
+  display: inline;
+  @media (min-width: 550px) {
+    display: none;
+  }
+}
