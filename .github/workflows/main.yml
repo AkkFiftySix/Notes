@@ -11,7 +11,7 @@ jobs:
     steps:
       - name: stop and remove containers
         run: |
-           ls -la1
+           ls -la
            docker-compose down
       - name: remove images
         run: |
